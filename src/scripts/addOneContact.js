@@ -1,6 +1,6 @@
 import { createFakeContact } from '../utils/createFakeContact.js';
 import { getAllContacts } from './getAllContacts.js';
-import { updateContacts } from '../utils/updateContacts.js';
+import { writeContacts } from '../utils/writeContacts.js';
 
 export const addOneContact = async () => {
   const contacts = await getAllContacts();
@@ -8,7 +8,7 @@ export const addOneContact = async () => {
   contacts.push(newContact);
 
   // записуємо в файл db.json
-  await updateContacts(contacts);
+  await writeContacts(contacts);
 };
 
 addOneContact();

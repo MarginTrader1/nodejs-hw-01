@@ -3,7 +3,7 @@ import DetectFileEncodingAndLanguage from 'detect-file-encoding-and-language';
 import { PATH_DB } from '../constants/contacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
 import { getAllContacts } from './getAllContacts.js';
-import { updateContacts } from '../utils/updateContacts.js';
+import { writeContacts } from '../utils/writeContacts.js';
 
 const generateContacts = async (number) => {
   // отримуємо інфу про кодування файлу
@@ -18,7 +18,7 @@ const generateContacts = async (number) => {
   const dataContacts = [...oldContacts, ...newContacts];
 
   // записуємо в файл db.json
-  updateContacts(dataContacts);
+  writeContacts(dataContacts);
 };
 
 generateContacts(5);
