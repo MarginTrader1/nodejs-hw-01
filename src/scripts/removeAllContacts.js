@@ -1,3 +1,7 @@
-export const removeAllContacts = async () => {};
+import { updateContacts } from '../utils/updateContacts.js';
+
+export const removeAllContacts = async () => {
+  await updateContacts([]);
+};
 
 removeAllContacts();

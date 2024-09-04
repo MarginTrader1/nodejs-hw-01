@@ -1,22 +1,24 @@
-import * as fs from 'node:fs/promises';
 import DetectFileEncodingAndLanguage from 'detect-file-encoding-and-language';
 
 import { PATH_DB } from '../constants/contacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
+import { getAllContacts } from './getAllContacts.js';
+import { updateContacts } from '../utils/updateContacts.js';
 
 const generateContacts = async (number) => {
   // отримуємо інфу про кодування файлу
   const { encoding } = DetectFileEncodingAndLanguage(PATH_DB);
 
-  // читаем файл таотримуємо старі контакти
-  const oldContacts = fs.readFile(PATH_DB, encoding);
+  // читаем файл та отримуємо старі контакти
+  const oldContacts = await getAllContacts(encoding);
 
   //створюємо массив, наповнюємо його через метод fill() та мепаем контакти
   const newContacts = Array(number).fill(0).map(createFakeContact);
 
   const dataContacts = [...oldContacts, ...newContacts];
+
   // записуємо в файл db.json
-  await fs.writeFile(PATH_DB, JSON.stringify(dataContacts, null, 2));
+  updateContacts(dataContacts);
 };
 
 generateContacts(5);
