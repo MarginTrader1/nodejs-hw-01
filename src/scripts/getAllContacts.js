@@ -5,4 +5,4 @@ export const getAllContacts = async () => {
   return data;
 };
 
-console.log(await getAllContacts());
+await getAllContacts();
