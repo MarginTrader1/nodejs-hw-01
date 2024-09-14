@@ -6,4 +6,4 @@ export const countContacts = async () => {
   return contacts.length;
 };
 
-await countContacts();
+countContacts();

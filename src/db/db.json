@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": "09eadb8f-17c8-49d8-aa7f-9624f14e1a9d",
+    "name": "Ruth Doyle",
+    "phone": "(940) 735-3061",
+    "email": "Amiya_Swaniawski@gmail.com",
+    "job": "Chief Interactions Executive"
+  },
+  {
+    "id": "efba76d7-470b-4ee2-9af0-033568af498f",
+    "name": "Mr. Trevor Skiles",
+    "phone": "916-882-7510 x4229",
+    "email": "Tate34@gmail.com",
+    "job": "Product Directives Strategist"
+  },
+  {
+    "id": "b5e12c40-5f3e-4d48-bcab-902754951fcc",
+    "name": "Brandi Schroeder",
+    "phone": "(287) 623-3168 x10444",
+    "email": "Steve.Streich27@gmail.com",
+    "job": "Regional Web Technician"
+  },
+  {
+    "id": "bb71116b-a05a-4a43-9303-345ba82bf601",
+    "name": "Kent Kovacek",
+    "phone": "615-542-7845 x65991",
+    "email": "Leonora_Sauer@hotmail.com",
+    "job": "Customer Tactics Coordinator"
+  },
+  {
+    "id": "dd0529b5-a6f7-4d06-91c0-d854a6417a8f",
+    "name": "Kristin Beahan",
+    "phone": "(330) 581-7904 x97077",
+    "email": "Johnnie_Hartmann81@yahoo.com",
+    "job": "Principal Implementation Planner"
+  }
+]
